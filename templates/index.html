@@ -1,0 +1,19 @@
+<h1>Fire or not Fire lets find out</h1>
+
+<form action="{{url_for('predict_data')}}" method="post">
+    <input type="text" name="temperature" placeholder="temperature" required"/><br>
+    <input type="text" name="RH" placeholder="RH" required="required"/><br>
+    <input type="text" name="WS" placeholder="WS" required="required"/><br>
+    <input type="text" name="Rain" placeholder="Rain" required="required"/><br>
+    <input type="text" name="FFMC" placeholder="FFMC" required="required"/><br>
+    <input type="text" name="DMC" placeholder="DMC" required="required"/><br>
+    <input type="text" name="ISI" placeholder="ISI" required="required"/><br>
+    <input type="text" name="Classes" placeholder="Classes" required="required"/><br>
+    <input type="text" name="Region" placeholder="Region" required="required"/><br>
+
+    <button type="submit">Predict</button>
+    </form>
+
+    <h2>
+        The FWI Prediction is {{results}}
+    </h2>
